@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TopheadingComponent } from './topheading/topheading.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UptickNewsapiserviceService } from './service/uptick-newsapiservice.service';
 
 @NgModule({
   declarations: [AppComponent, TopheadingComponent],
@@ -15,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [UptickNewsapiserviceService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
