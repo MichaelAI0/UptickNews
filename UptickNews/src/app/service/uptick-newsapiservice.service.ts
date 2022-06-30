@@ -9,8 +9,14 @@ export class UptickNewsapiserviceService {
   constructor(private _http: HttpClient) {}
   newsapiurl =
     'https://newsapi.org/v2/top-headlines?country=us&apiKey=2766ae98d4604867b2947c9ecbb6a7f3';
+  techapiurl =
+    'https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=2766ae98d4604867b2947c9ecbb6a7f3';
 
   topHeading(): Observable<any> {
     return this._http.get(this.newsapiurl);
+  }
+
+  techNews(): Observable<any> {
+    return this._http.get(this.techapiurl);
   }
 }
