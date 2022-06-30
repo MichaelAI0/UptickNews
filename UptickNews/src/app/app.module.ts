@@ -9,15 +9,29 @@ import { HttpClientModule } from '@angular/common/http';
 import { UptickNewsapiserviceService } from './service/uptick-newsapiservice.service';
 import { TechnewsComponent } from './technews/technews.component';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { AuthComponent } from './auth/auth.component';
+import { BusinessComponent } from './business/business.component';
+import { SearchComponent } from './search/search.component';
+import { FormsModule } from '@angular/forms';
+import { HealthComponent } from './health/health.component';
 
 @NgModule({
-  declarations: [AppComponent, TopheadingComponent, TechnewsComponent],
+  declarations: [
+    AppComponent,
+    TopheadingComponent,
+    TechnewsComponent,
+    AuthComponent,
+    BusinessComponent,
+    SearchComponent,
+    HealthComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
     LoadingBarHttpClientModule,
+    FormsModule,
   ],
   providers: [UptickNewsapiserviceService],
   bootstrap: [AppComponent],
