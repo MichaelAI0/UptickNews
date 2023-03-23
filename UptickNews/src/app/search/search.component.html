@@ -1,6 +1,6 @@
 <div class="container-fluid mt-5">
   <div class="row">
-    <!-- <h4>{{}}</h4> -->
+    <h4>Trending Search: {{ query }}</h4>
     <div *ngFor="let d of searchNewsDisplay" class="col-lg-3 mt-3 mb-3">
       <div class="box">
         <img src="{{ d.urlToImage }}" width="100%" />

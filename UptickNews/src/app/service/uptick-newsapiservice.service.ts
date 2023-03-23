@@ -11,7 +11,6 @@ export class UptickNewsapiserviceService {
 
   constructor(private _http: HttpClient) {}
 
-  input = document.querySelector('.input');
   techapiurl = `${this.apiUrl}/top-headlines?country=us&category=technology&apiKey=${this.apiKey}`;
 
   newsapiurl = `${this.apiUrl}/top-headlines?country=us&apiKey=${this.apiKey}`;
