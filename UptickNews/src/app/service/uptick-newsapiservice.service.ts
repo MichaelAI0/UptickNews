@@ -1,27 +1,23 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { query } from '@angular/animations';
-import { SearchComponent } from '../search/search.component';
+
 @Injectable({
   providedIn: 'root',
 })
 export class UptickNewsapiserviceService {
+  private apiKey = '2766ae98d4604867b2947c9ecbb6a7f3';
+  private apiUrl = 'https://newsapi.org/v2';
+
   constructor(private _http: HttpClient) {}
 
   input = document.querySelector('.input');
-  newsapiurl =
-    'https://newsapi.org/v2/top-headlines?country=us&apiKey=2766ae98d4604867b2947c9ecbb6a7f3';
-  techapiurl =
-    'https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=2766ae98d4604867b2947c9ecbb6a7f3';
+  techapiurl = `${this.apiUrl}/top-headlines?country=us&category=technology&apiKey=${this.apiKey}`;
 
-  businessApiUrl =
-    'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=2766ae98d4604867b2947c9ecbb6a7f3';
+  newsapiurl = `${this.apiUrl}/top-headlines?country=us&apiKey=${this.apiKey}`;
+  businessApiUrl = `${this.apiUrl}/top-headlines?country=us&category=business&apiKey=${this.apiKey}`;
 
-  healthApiUrl =
-    'https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=2766ae98d4604867b2947c9ecbb6a7f3';
-
-  everyThingApiUrl = `https://newsapi.org/v2/everything?q=${query}&apiKey=2766ae98d4604867b2947c9ecbb6a7f3`;
+  healthApiUrl = `${this.apiUrl}/top-headlines?country=us&category=health&apiKey=${this.apiKey}`;
 
   topHeading(): Observable<any> {
     return this._http.get(this.newsapiurl);
@@ -39,7 +35,8 @@ export class UptickNewsapiserviceService {
     return this._http.get(this.healthApiUrl);
   }
 
-  searchNews(): Observable<any> {
-    return this._http.get(this.everyThingApiUrl);
+  getEverything(query: string): Observable<any> {
+    const url = `${this.apiUrl}/everything?q=${query}&apiKey=${this.apiKey}`;
+    return this._http.get(url);
   }
 }

@@ -11,10 +11,10 @@ import { TechnewsComponent } from './technews/technews.component';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { AuthComponent } from './auth/auth.component';
 import { BusinessComponent } from './business/business.component';
-import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { HealthComponent } from './health/health.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +23,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     TechnewsComponent,
     AuthComponent,
     BusinessComponent,
-    SearchComponent,
     HealthComponent,
     NavbarComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,

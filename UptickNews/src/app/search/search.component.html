@@ -1,11 +1,15 @@
-<div class="flex justify-end">
-  <form class="d-flex" role="search">
-    <input
-      class="form-control me-2"
-      type="search"
-      placeholder="Search"
-      aria-label="Search"
-    />
-    <button class="btn btn-outline-success" type="submit">Search</button>
-  </form>
+<div class="container-fluid mt-5">
+  <div class="row">
+    <!-- <h4>{{}}</h4> -->
+    <div *ngFor="let d of searchNewsDisplay" class="col-lg-3 mt-3 mb-3">
+      <div class="box">
+        <img src="{{ d.urlToImage }}" width="100%" />
+        <h5 class="mt-2 mb-2">{{ d.title }}</h5>
+
+        <a href="{{ d.url }}" target="_blank" class="btn btn-dark btn-sm mt-2"
+          >Read more</a
+        >
+      </div>
+    </div>
+  </div>
 </div>

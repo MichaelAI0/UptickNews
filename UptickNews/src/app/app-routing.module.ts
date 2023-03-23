@@ -1,3 +1,4 @@
+import { SearchComponent } from './search/search.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BusinessComponent } from './business/business.component';
@@ -13,7 +14,7 @@ const routes: Routes = [
     path: 'health',
     component: HealthComponent,
   },
-  { path: 'search/:searchTerm', component: TopheadingComponent },
+  { path: 'search', component: SearchComponent },
 ];
 
 @NgModule({

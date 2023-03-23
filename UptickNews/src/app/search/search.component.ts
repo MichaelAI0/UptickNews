@@ -1,26 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { SearchResultsService } from '../service/search-results.service';
 import { UptickNewsapiserviceService } from '../service/uptick-newsapiservice.service';
-
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css'],
 })
 export class SearchComponent implements OnInit {
-  searchTerm: string = '';
-  input = document.querySelector('.input');
+  query: string = '';
 
-  constructor(private route: ActivatedRoute, private router: Router) {}
+  constructor(
+    private searchResultsService: SearchResultsService,
+    private _apiService: UptickNewsapiserviceService
+  ) {}
+
+  searchNewsDisplay: any = [];
 
   ngOnInit(): void {
-    this.route.params.subscribe((params) => {
-      if (params.searchTerm) this.searchTerm = params.searchTerm;
+    this.searchResultsService.getQuery().subscribe((query) => {
+      this.query = query;
+      console.log(query);
+      // Call your API service here using the query
+      this._apiService.getEverything(query).subscribe((result) => {
+        this.searchNewsDisplay = result.articles;
+        console.log(result.articles);
+      });
     });
-  }
-
-  search(): void {
-    if (this.searchTerm)
-      this.router.navigateByUrl('/search/' + this.searchTerm);
   }
 }
