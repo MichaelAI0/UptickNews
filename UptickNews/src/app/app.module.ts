@@ -14,6 +14,7 @@ import { BusinessComponent } from './business/business.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { HealthComponent } from './health/health.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HealthComponent } from './health/health.component';
     BusinessComponent,
     SearchComponent,
     HealthComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

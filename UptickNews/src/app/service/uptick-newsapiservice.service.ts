@@ -38,4 +38,8 @@ export class UptickNewsapiserviceService {
   healthNews(): Observable<any> {
     return this._http.get(this.healthApiUrl);
   }
+
+  searchNews(): Observable<any> {
+    return this._http.get(this.everyThingApiUrl);
+  }
 }
