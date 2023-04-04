@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {
-  FormGroup,
+  UntypedFormGroup,
   NgForm,
   Validators,
-  FormArray,
-  FormBuilder,
+  UntypedFormArray,
+  UntypedFormBuilder,
 } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -16,19 +16,19 @@ import { AuthResponseData, AuthService } from './auth.service';
   styleUrls: ['./auth.component.css'],
 })
 export class AuthComponent implements OnInit {
-  public user: FormGroup;
+  public user: UntypedFormGroup;
   isLoginMode = true;
   isLoading = false;
   error: string = null;
   constructor(
-    private _formBuilder: FormBuilder,
+    private _formBuilder: UntypedFormBuilder,
     private authService: AuthService,
     private router: Router,
     private route: ActivatedRoute
   ) {}
 
-  get userDetails(): FormArray {
-    return this.user.get('userDetails') as FormArray;
+  get userDetails(): UntypedFormArray {
+    return this.user.get('userDetails') as UntypedFormArray;
   }
 
   ngOnInit(): void {
