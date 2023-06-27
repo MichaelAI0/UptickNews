@@ -1,6 +1,6 @@
 # UptickNews
 
-[<img src="https://img.youtube.com/vi/u-Vp5eJP5Nc/maxresdefault.jpg" width="50%">](https://youtu.be/u-Vp5eJP5Nc&ab_channel=MichaelHarris)
+<iframe src="https://www.youtube.com/embed/u-Vp5eJP5Nc" width="800" height="450" frameborder="0"></iframe>
   
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
