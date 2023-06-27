@@ -1,8 +1,6 @@
 # UptickNews
 
-[![Watch the video](https://img.youtube.com/vi/u-Vp5eJP5Nc/hqdefault.
-jpg)]
-(https://youtu.be/u-Vp5eJP5Nc) 
+[![Uptick News](http://img.youtube.com/vi/u-Vp5eJP5Nc/0.jpg)](http://www.youtube.com/watch?v=u-Vp5eJP5Nc "Uptick News")
 
   
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
