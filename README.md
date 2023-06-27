@@ -1,6 +1,6 @@
 # UptickNews
 
-<iframe src="https://www.youtube.com/embed/u-Vp5eJP5Nc" width="800" height="450" frameborder="0"></iframe>
+<div style="padding-bottom: 56.25%; position: relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/u-Vp5eJP5Nc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>Powered by <a href="https://embed.tube/embed-code-generator/youtube/">youtube embed video</a> generator</small></iframe></div>
   
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
