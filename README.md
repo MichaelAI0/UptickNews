@@ -1,5 +1,5 @@
 # UptickNews
-
+## Watch the Video here!
 [![Uptick News](http://img.youtube.com/vi/u-Vp5eJP5Nc/0.jpg)](http://www.youtube.com/watch?v=u-Vp5eJP5Nc "Uptick News")
 
   
