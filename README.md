@@ -1,7 +1,8 @@
 # UptickNews
 
-[![Watch the video](https://img.youtube.com/vi/u-Vp5eJP5Nc&ab_channel=MichaelHarris/maxresdefault.jpg)](https://youtu.be/u-Vp5eJP5Nc&ab_channel=MichaelHarris)
+[![Watch the video](https://img.youtube.com/vi/u-Vp5eJP5N/maxresdefault.jpg)](https://youtu.be/u-Vp5eJP5Nc&ab_channel=MichaelHarris)
 
+<video src='https://www.youtube.com/watch?v=u-Vp5eJP5Nc&ab_channel=MichaelHarris' width=180/>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ## Development server
