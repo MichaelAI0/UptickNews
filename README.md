@@ -1,8 +1,8 @@
 # UptickNews
 
-<div class="videowrapper youtube">
-  <iframe src="https://www.youtube-nocookie.com/embed/HUBNt18RFbo"></iframe>
-</div>
+[![Watch the video](https://img.youtube.com/vi/u-Vp5eJP5Nc/hqdefault.
+jpg)]
+(https://youtu.be/u-Vp5eJP5Nc) 
 
   
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
